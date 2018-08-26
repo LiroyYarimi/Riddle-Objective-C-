@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C801C3DE2132F4AC00BCAD27 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C801C3DD2132F4AC00BCAD27 /* InfoViewController.m */; };
 		C85F287F2132B4010029AE10 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C85F287E2132B4010029AE10 /* AppDelegate.m */; };
 		C85F28822132B4010029AE10 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C85F28812132B4010029AE10 /* ViewController.m */; };
 		C85F28852132B4010029AE10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C85F28832132B4010029AE10 /* Main.storyboard */; };
@@ -20,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C801C3DC2132F4AC00BCAD27 /* InfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
+		C801C3DD2132F4AC00BCAD27 /* InfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
 		C85F287A2132B4010029AE10 /* Riddle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Riddle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C85F287D2132B4010029AE10 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C85F287E2132B4010029AE10 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -106,6 +109,8 @@
 				C85F287E2132B4010029AE10 /* AppDelegate.m */,
 				C85F28802132B4010029AE10 /* ViewController.h */,
 				C85F28812132B4010029AE10 /* ViewController.m */,
+				C801C3DC2132F4AC00BCAD27 /* InfoViewController.h */,
+				C801C3DD2132F4AC00BCAD27 /* InfoViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -197,6 +202,7 @@
 				C85F28822132B4010029AE10 /* ViewController.m in Sources */,
 				C85F28982132B4FE0029AE10 /* Question.m in Sources */,
 				C85F288D2132B4020029AE10 /* main.m in Sources */,
+				C801C3DE2132F4AC00BCAD27 /* InfoViewController.m in Sources */,
 				C85F287F2132B4010029AE10 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -135,10 +135,74 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <segue destination="Dj5-hk-9zl" kind="show" identifier="goToInfoView" id="y6h-k8-9RY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.5" y="118.5"/>
+        </scene>
+        <!--Info View Controller-->
+        <scene sceneID="RLh-6C-YAi">
+            <objects>
+                <viewController id="Dj5-hk-9zl" customClass="InfoViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fzB-9l-RaW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cGt-YF-dkW">
+                                <rect key="frame" x="16" y="76" width="343" height="546"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">1. Valentine's day is banned in Saudi Arabia: True - Religious police banned red roses and sale of Valentine's day gifts as it is both un-Islamic and encourages relations of men and women outside wedlock.
+2. Approximately one quarter of human bones are in the feet: True – 52 bones in the feet and 206 in the whole body.
+3. ###a rel="nofollow"&gt;The total surface area of two human lungs have a surface area of approximately 70 square metres: True - Source: ncbi.nlm.nih.gov/pmc/articles/PMC1271180/pdf/janat00322-0079.pdf
+4. In West Virginia, USA, if you accidentally hit an animal with your car, you are free to take it home to eat: True - Under West Virginia state code §20-2-4 it is legal to take home and eat roadkill.
+5. In London, UK, if you happen to die in the House of Parliament, you are technically entitled to a state funeral, because the building is considered too sacred a place: False
+6. It is illegal to pee in the Ocean in Portugal: True
+7. You can lead a cow down stairs but not up stairs: False - You can lead a cow up the stairs but not down the stairs. A cow’s ankle and knee joints are misaligned for supporting the animal’s weight when travelling down stairs.
+8. Google was originally called “Backrub”: True - Larry and Sergey began collaborating on a search engine called BackRub in 1996.
+9. Buzz Aldrin’s mother’s maiden name was “Moon”: True - Her name was Marion Moon.
+10. The loudest sound produced by any animal is 188 decibels. That animal is the African Elephant. False - Loud structured sounds of Blue Whales have been recorded in excess of 188 db (louder than a jet engine). The Tiger Pistol Shrimp is able to snap its claw and stun its prey by emitting a sound up to 200 db (youtu.be/XC6I8iPiHT8)
+11. No piece of square dry paper can be folded in half more than 7 times: False - Mythbuster’s episode: youtu.be/kRAEBbotuIE
+12. Chocolate affects a dog's heart and nervous system; a few ounces are enough to kill a small dog: True - Theobromine is a bitter alkaloid of the cocoa plant found in chocolate. Although harmless to humans, it can cause vomiting, diarrhoea, convulsions and even death in animals that digest theobromine slowly, such as dogs. The lethal dosage is between 250 and 500 mg per kg of body weight.
+</mutableString>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d5E-Bc-ywE">
+                                <rect key="frame" x="16" y="621" width="46" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Background on the Questions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vWU-if-Lxh">
+                                <rect key="frame" x="19" y="20" width="337" height="32"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="27"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.19215686274509802" green="0.50980392156862742" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cGt-YF-dkW" firstAttribute="top" relation="greaterThanOrEqual" secondItem="vWU-if-Lxh" secondAttribute="bottom" constant="24" id="4P8-Ou-CDv"/>
+                            <constraint firstItem="Eop-4J-Wj6" firstAttribute="bottom" secondItem="cGt-YF-dkW" secondAttribute="bottom" constant="45" id="63v-Je-Fcz"/>
+                            <constraint firstItem="cGt-YF-dkW" firstAttribute="leading" secondItem="Eop-4J-Wj6" secondAttribute="leading" constant="16" id="asf-RS-Rcu"/>
+                            <constraint firstItem="Eop-4J-Wj6" firstAttribute="trailing" secondItem="cGt-YF-dkW" secondAttribute="trailing" constant="16" id="qac-WX-Izw"/>
+                            <constraint firstItem="vWU-if-Lxh" firstAttribute="top" secondItem="Eop-4J-Wj6" secondAttribute="top" id="sM3-cD-fdI"/>
+                            <constraint firstItem="cGt-YF-dkW" firstAttribute="top" secondItem="vWU-if-Lxh" secondAttribute="bottom" constant="24" id="uC2-bz-1Gc"/>
+                            <constraint firstItem="vWU-if-Lxh" firstAttribute="centerX" secondItem="fzB-9l-RaW" secondAttribute="centerX" id="ua5-xk-i5N"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Eop-4J-Wj6"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0ln-ab-yMH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1136.8" y="117.39130434782609"/>
         </scene>
     </scenes>
 </document>
