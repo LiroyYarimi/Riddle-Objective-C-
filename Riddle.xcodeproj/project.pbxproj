@@ -13,6 +13,10 @@
 		C85F28872132B4020029AE10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C85F28862132B4020029AE10 /* Assets.xcassets */; };
 		C85F288A2132B4020029AE10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C85F28882132B4020029AE10 /* LaunchScreen.storyboard */; };
 		C85F288D2132B4020029AE10 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C85F288C2132B4020029AE10 /* main.m */; };
+		C85F28982132B4FE0029AE10 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = C85F28972132B4FE0029AE10 /* Question.m */; };
+		C85F289B2132B5160029AE10 /* QuestionBank.m in Sources */ = {isa = PBXBuildFile; fileRef = C85F289A2132B5160029AE10 /* QuestionBank.m */; };
+		C85F28A02132B54F0029AE10 /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C85F289E2132B54F0029AE10 /* ProgressHUD.bundle */; };
+		C85F28A12132B54F0029AE10 /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = C85F289F2132B54F0029AE10 /* ProgressHUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,13 @@
 		C85F28892132B4020029AE10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C85F288B2132B4020029AE10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C85F288C2132B4020029AE10 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C85F28962132B4FE0029AE10 /* Question.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Question.h; sourceTree = "<group>"; };
+		C85F28972132B4FE0029AE10 /* Question.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Question.m; sourceTree = "<group>"; };
+		C85F28992132B5160029AE10 /* QuestionBank.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuestionBank.h; sourceTree = "<group>"; };
+		C85F289A2132B5160029AE10 /* QuestionBank.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuestionBank.m; sourceTree = "<group>"; };
+		C85F289D2132B54F0029AE10 /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
+		C85F289E2132B54F0029AE10 /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
+		C85F289F2132B54F0029AE10 /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,17 +69,56 @@
 		C85F287C2132B4010029AE10 /* Riddle */ = {
 			isa = PBXGroup;
 			children = (
+				C85F28952132B4E60029AE10 /* Controller */,
+				C85F28942132B4DC0029AE10 /* View */,
+				C85F288B2132B4020029AE10 /* Info.plist */,
+				C85F289C2132B51C0029AE10 /* Model */,
+				C85F28932132B4B30029AE10 /* Supporting Files */,
+				C85F288C2132B4020029AE10 /* main.m */,
+			);
+			path = Riddle;
+			sourceTree = "<group>";
+		};
+		C85F28932132B4B30029AE10 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C85F28882132B4020029AE10 /* LaunchScreen.storyboard */,
+				C85F289E2132B54F0029AE10 /* ProgressHUD.bundle */,
+				C85F289D2132B54F0029AE10 /* ProgressHUD.h */,
+				C85F289F2132B54F0029AE10 /* ProgressHUD.m */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C85F28942132B4DC0029AE10 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C85F28832132B4010029AE10 /* Main.storyboard */,
+				C85F28862132B4020029AE10 /* Assets.xcassets */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C85F28952132B4E60029AE10 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
 				C85F287D2132B4010029AE10 /* AppDelegate.h */,
 				C85F287E2132B4010029AE10 /* AppDelegate.m */,
 				C85F28802132B4010029AE10 /* ViewController.h */,
 				C85F28812132B4010029AE10 /* ViewController.m */,
-				C85F28832132B4010029AE10 /* Main.storyboard */,
-				C85F28862132B4020029AE10 /* Assets.xcassets */,
-				C85F28882132B4020029AE10 /* LaunchScreen.storyboard */,
-				C85F288B2132B4020029AE10 /* Info.plist */,
-				C85F288C2132B4020029AE10 /* main.m */,
 			);
-			path = Riddle;
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C85F289C2132B51C0029AE10 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C85F28962132B4FE0029AE10 /* Question.h */,
+				C85F28972132B4FE0029AE10 /* Question.m */,
+				C85F28992132B5160029AE10 /* QuestionBank.h */,
+				C85F289A2132B5160029AE10 /* QuestionBank.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +178,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C85F28A02132B54F0029AE10 /* ProgressHUD.bundle in Resources */,
 				C85F288A2132B4020029AE10 /* LaunchScreen.storyboard in Resources */,
 				C85F28872132B4020029AE10 /* Assets.xcassets in Resources */,
 				C85F28852132B4010029AE10 /* Main.storyboard in Resources */,
@@ -141,7 +192,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C85F28A12132B54F0029AE10 /* ProgressHUD.m in Sources */,
+				C85F289B2132B5160029AE10 /* QuestionBank.m in Sources */,
 				C85F28822132B4010029AE10 /* ViewController.m in Sources */,
+				C85F28982132B4FE0029AE10 /* Question.m in Sources */,
 				C85F288D2132B4020029AE10 /* main.m in Sources */,
 				C85F287F2132B4010029AE10 /* AppDelegate.m in Sources */,
 			);
@@ -292,7 +346,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.LiroyYarimi.Riddle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -309,7 +363,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.LiroyYarimi.Riddle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
