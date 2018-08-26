@@ -21,7 +21,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SvT-VQ-mC4" userLabel="QuestionView">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="345"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aKU-AF-05v" userLabel="Question Label">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aKU-AF-05v" userLabel="Question Label">
                                         <rect key="frame" x="27" y="16" width="321" height="313"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -30,11 +30,13 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="aKU-AF-05v" firstAttribute="centerX" secondItem="SvT-VQ-mC4" secondAttribute="centerX" id="PPb-FK-PUL"/>
                                     <constraint firstItem="aKU-AF-05v" firstAttribute="top" secondItem="SvT-VQ-mC4" secondAttribute="top" constant="16" id="bWr-g8-Ctg"/>
+                                    <constraint firstItem="aKU-AF-05v" firstAttribute="centerY" secondItem="SvT-VQ-mC4" secondAttribute="centerY" id="blb-Vv-qhM"/>
                                     <constraint firstAttribute="height" constant="345" id="cDf-i1-9xP"/>
                                     <constraint firstAttribute="bottom" secondItem="aKU-AF-05v" secondAttribute="bottom" constant="16" id="gvf-3e-tai"/>
                                     <constraint firstItem="aKU-AF-05v" firstAttribute="leading" secondItem="SvT-VQ-mC4" secondAttribute="leading" constant="27" id="ifa-8z-Lri"/>
-                                    <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="aKU-AF-05v" secondAttribute="trailing" constant="27" id="zS3-gB-UUN"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="aKU-AF-05v" secondAttribute="trailing" constant="27" id="zS3-gB-UUN"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R20-kW-hKQ" userLabel="Buttons View">

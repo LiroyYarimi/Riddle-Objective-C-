@@ -64,6 +64,7 @@
     
     if (_questionIndex <= (_numberOfQuestions - 1)) {
         _questionLabel.text = [_allQuestion getQuestionWithIndex:_questionIndex];
+        //[_questionLabel sizeToFit];
         [self updateUI];
     }
     else{
