@@ -17,14 +17,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    QuestionBank *ls = [[QuestionBank alloc]init];
-    
-    NSLog(@"number of questions:%d",[ls getNumberOfQuestions]);
-    
-    
-    for (int i=0; i<15; i++) {
-        NSLog(@"Question: %@ Answer:%d",[ls getQuestionWithIndex:i],[ls getAnswerWithIndex:i]);
-    }
 }
 
 
