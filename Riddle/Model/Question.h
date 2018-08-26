@@ -12,7 +12,9 @@
 
 @property (nonatomic,strong) NSString *questionText;
 @property (nonatomic) BOOL answer;
--(id) initWithQuestionText : (NSString*) text answer : (NSString*) correctAnswer;
+-(id) initWithQuestionText : (NSString*) text answer : (BOOL) correctAnswer;
+-(NSString*) getQuestion;
+-(BOOL) getAnswer;
 
 @end
 

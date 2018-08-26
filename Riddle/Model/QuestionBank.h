@@ -11,5 +11,10 @@
 
 @interface QuestionBank : NSObject
 
+@property (nonatomic,strong) NSMutableArray *list; //array of questions.
+-(id) init;
+-(int) getNumberOfQuestions;
+-(NSString*) getQuestionWithIndex:(int) index;
+-(BOOL) getAnswerWithIndex:(int) index;
 
 @end

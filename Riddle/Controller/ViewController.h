@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "QuestionBank.h"
 
 @interface ViewController : UIViewController
 

@@ -10,11 +10,17 @@
 
 @implementation Question
 
--(id) initWithQuestionText : (NSString*) text answer : (NSString*) correctAnswer{
+-(id) initWithQuestionText : (NSString*) text answer : (BOOL) correctAnswer{
 
     self.questionText = text;
     self.answer = correctAnswer;
     return self;
+}
+-(NSString*) getQuestion{
+    return self.questionText;
+}
+-(BOOL) getAnswer{
+    return self.answer;
 }
 
 @end
