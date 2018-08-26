@@ -7,7 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Question.h"
 
 @interface QuestionBank : NSObject
+
 
 @end

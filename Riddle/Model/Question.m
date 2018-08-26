@@ -10,4 +10,12 @@
 
 @implementation Question
 
+-(id) initWithQuestionText : (NSString*) text answer : (NSString*) correctAnswer{
+
+    self.questionText = text;
+    self.answer = correctAnswer;
+    return self;
+}
+
 @end
+ 

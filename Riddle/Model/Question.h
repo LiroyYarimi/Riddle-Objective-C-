@@ -10,4 +10,9 @@
 
 @interface Question : NSObject
 
+@property (nonatomic,strong) NSString *questionText;
+@property (nonatomic) BOOL answer;
+-(id) initWithQuestionText : (NSString*) text answer : (NSString*) correctAnswer;
+
 @end
+
